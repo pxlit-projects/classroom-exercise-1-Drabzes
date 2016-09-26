@@ -19,9 +19,18 @@ class Barista {
         }
     }
 
-    Barista(String name, WorkEthic _workEthic) {
+    Barista(String name, int _workEthic) {
         this.name = name;
-        workEthic = _workEthic;
+
+        if (Objects.equals(_workEthic, 1)) {
+            workEthic = new CustomerFriendlyWorkEthic();
+        } else if (Objects.equals(_workEthic, 2)) {
+            workEthic = new LazyWorkEthic();
+        } else if (Objects.equals(_workEthic, 3)) {
+            workEthic = new BadHearingWorkEthic();
+        } else {
+            workEthic = new LazyWorkEthic();
+        }
     }
 
     String getName() {

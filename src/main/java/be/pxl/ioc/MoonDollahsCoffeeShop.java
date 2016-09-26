@@ -14,9 +14,9 @@ public class MoonDollahsCoffeeShop {
         Barista vicky = new Barista("vicky");
         Barista emma = new Barista("gemma");
         Barista gianluca = new Barista("gianluca");
+        Barista gemma = new Barista("gemma", 1);
 
-
-        baristas = Arrays.asList(vicky, emma, gianluca);
+        baristas = Arrays.asList(vicky, emma, gianluca, gemma);
     }
 
     private void serve(List<String> customers) {
