@@ -1,5 +1,6 @@
 package be.pxl.ioc;
 
+import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -13,6 +14,7 @@ public class MoonDollahsCoffeeShop {
         Barista vicky = new Barista("vicky");
         Barista emma = new Barista("gemma");
         Barista gianluca = new Barista("gianluca");
+
 
         baristas = Arrays.asList(vicky, emma, gianluca);
     }

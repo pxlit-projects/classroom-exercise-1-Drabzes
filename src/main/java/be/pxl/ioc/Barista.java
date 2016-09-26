@@ -19,6 +19,11 @@ class Barista {
         }
     }
 
+    Barista(String name, WorkEthic _workEthic) {
+        this.name = name;
+        workEthic = _workEthic;
+    }
+
     String getName() {
         return name;
     }
